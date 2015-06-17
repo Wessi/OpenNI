@@ -1,5 +1,4 @@
-Linux:
-	Requirements:
+	# Requirements:
 		1) GCC 4.x
 		   From: http://gcc.gnu.org/releases.html
 		   Or via apt:
@@ -25,7 +24,6 @@ Linux:
 		       sudo apt-get install sun-java6-jdk
 		     Ubuntu 12.x:				
 		       sudo apt-get install openjdk-6-jdk
-
 		   
 	Optional Requirements (To build the documentation):
 		1) Doxygen
@@ -42,6 +40,13 @@ Linux:
 		   From: http://www.go-mono.com/mono-downloads/download.html
 		   Or via apt:
 		   sudo apt-get install mono-complete
+	To install all the above requirements and dependencies once run the following command in new Terminal:
+		sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev doxygen graphviz mono-complete
 		   
-	Building OpenNI:
+	# Building OpenNI:
+		    cd OpenNI/Platform/Linux/CreateRedist/
+		    chmod +x RedistMaker
+		    ./RedistMaker
+		    cd ../Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/
+		    sudo ./install.sh
 		
