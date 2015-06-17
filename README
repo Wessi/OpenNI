@@ -1,52 +1,24 @@
-	# Requirements:
-		1) GCC 4.x
-		   From: http://gcc.gnu.org/releases.html
-		   Or via apt:
-		   sudo apt-get install g++
-		2) Python 2.6+/3.x
-		   From: http://www.python.org/download/
-		   Or via apt:
-		   sudo apt-get install python
-		3) LibUSB 1.0.x
-		   From: http://sourceforge.net/projects/libusb/files/libusb-1.0/
-		   Or via apt:
-		   sudo apt-get install libusb-1.0-0-dev
-		4) FreeGLUT3
-		   From: http://freeglut.sourceforge.net/index.php#download
-		   Or via apt:
-		   sudo apt-get install freeglut3-dev
-		5) JDK 6.0 or later
-		   From: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-		   Or via apt:
-		     Ubuntu 10.x:				
-		       sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
-		       sudo apt-get update
-		       sudo apt-get install sun-java6-jdk
-		     Ubuntu 12.x:				
-		       sudo apt-get install openjdk-6-jdk
-		   
-	Optional Requirements (To build the documentation):
-		1) Doxygen
-		   From: http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc
-		   Or via apt:
-		   sudo apt-get install doxygen
-		2) GraphViz
-		   From: http://www.graphviz.org/Download_linux_ubuntu.php
-		   Or via apt:
-		   sudo apt-get install graphviz
 
-	Optional Requirements (To build the Mono wrapper):
-		1) Mono
-		   From: http://www.go-mono.com/mono-downloads/download.html
-		   Or via apt:
-		   sudo apt-get install mono-complete
-	To install all the above requirements and dependencies once run the following command in new Terminal:
-		sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev doxygen graphviz mono-complete
-		   
-	# Building OpenNI:
-		    cd OpenNI/Platform/Linux/CreateRedist/
-		    chmod +x RedistMaker
-		    ./RedistMaker
-		    cd ../Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/
-		    sudo ./install.sh
+# Requirements:
+	GCC 4.x
+		sudo apt-get install g++
+	Python 2.6+/3.x
+		sudo apt-get install python
+	LibUSB 1.0.x
+		sudo apt-get install libusb-1.0-0-dev
+	FreeGLUT3
+		sudo apt-get install freeglut3-dev
+	JDK 6.0 or later
+		From: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+		Follow: http://www.wikihow.com/Install-Oracle-Java-JDK-on-Ubuntu-Linux 
+	
+To install all the above requirements and dependencies once run the following command in new Terminal:
+	sudo apt-get install git-core cmake freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libusb-1.0-0-dev doxygen graphviz mono-complete
+
+# Building OpenNI:
+	cd OpenNI/Platform/Linux/CreateRedist/
+	chmod +x RedistMaker
+	./RedistMaker
+	cd ../Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/
+	sudo ./install.sh
 		
