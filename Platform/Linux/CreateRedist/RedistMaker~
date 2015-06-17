@@ -1,0 +1,4 @@
+#!/bin/bash -e
+python Redist_OpenNi.py $*
+
+

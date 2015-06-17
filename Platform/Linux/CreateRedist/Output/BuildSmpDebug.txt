@@ -1,0 +1,157 @@
+make: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/Build'
+make -C ../SimpleRead.net
+make -C ../SimpleViewer.net
+make -C ../UserTracker.net
+make -C ../NiSimpleCreate
+make -C ../NiViewer
+make -C ../SimpleRead.java
+make -C ../NiSkeletonBenchmark
+make -C ../SimpleViewer.java
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.net'
+gmcs -out:../Bin/x64-Debug/SimpleRead.net.exe -target:winexe  -r:OpenNI.net.dll -lib:../Bin/x64-Debug ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.net'
+gmcs -out:../Bin/x64-Debug/SimpleViewer.net.exe -target:winexe -unsafe -r:OpenNI.net.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll -lib:../Bin/x64-Debug ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.net'
+gmcs -out:../Bin/x64-Debug/UserTracker.net.exe -target:winexe -unsafe -r:OpenNI.net.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll -lib:../Bin/x64-Debug ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make -C ../NiSimpleRead
+make -C ../NiHandTracker
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.java'
+mkdir -p x64-Debug
+make -C ../NiConvertXToONI
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiViewer'
+mkdir -p x64-Debug
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleCreate'
+mkdir -p x64-Debug
+javac -cp ../Bin/x64-Debug/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Debug ./org/openni/Samples/SimpleRead/*.java
+make -C ../NiRecordSynthetic
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.java'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/Audio.d x64-Debug/Audio.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Audio.o Audio.cpp
+g++ -MD -MP -MT "./x64-Debug/NiSimpleCreate.d x64-Debug/NiSimpleCreate.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiSimpleCreate.o NiSimpleCreate.cpp
+make -C ../NiSimpleViewer
+javac -cp ../Bin/x64-Debug/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Debug ./org/openni/Samples/SimpleViewer/*.java
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSkeletonBenchmark'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/NiSkeletonBenchmark.d x64-Debug/NiSkeletonBenchmark.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiSkeletonBenchmark.o NiSkeletonBenchmark.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleRead'
+mkdir -p x64-Debug
+make -C ../UserTracker.java
+g++ -MD -MP -MT "./x64-Debug/Capture.d x64-Debug/Capture.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Capture.o Capture.cpp
+g++ -MD -MP -MT "./x64-Debug/NiSimpleRead.d x64-Debug/NiSimpleRead.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiSimpleRead.o NiSimpleRead.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiHandTracker'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/Device.d x64-Debug/Device.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Device.o Device.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleViewer'
+mkdir -p x64-Debug
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiRecordSynthetic'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/NiSimpleViewer.d x64-Debug/NiSimpleViewer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiSimpleViewer.o NiSimpleViewer.cpp
+g++ -MD -MP -MT "./x64-Debug/NiRecordSynthetic.d x64-Debug/NiRecordSynthetic.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiRecordSynthetic.o NiRecordSynthetic.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiConvertXToONI'
+mkdir -p x64-Debug
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.java'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/NiConvertXToONI.d x64-Debug/NiConvertXToONI.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiConvertXToONI.o NiConvertXToONI.cpp
+javac -cp ../Bin/x64-Debug/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Debug ./org/openni/Samples/UserTracker/*.java
+g++ -MD -MP -MT "./x64-Debug/main.d x64-Debug/main.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/main.o main.cpp
+g++ -o ../Bin/x64-Debug/Sample-NiRecordSynthetic ./x64-Debug/NiRecordSynthetic.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -MD -MP -MT "./x64-Debug/Draw.d x64-Debug/Draw.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Draw.o Draw.cpp
+g++ -MD -MP -MT "./x64-Debug/Keyboard.d x64-Debug/Keyboard.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Keyboard.o Keyboard.cpp
+g++ -o ../Bin/x64-Debug/NiSkeletonBenchmark ./x64-Debug/NiSkeletonBenchmark.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -o ../Bin/x64-Debug/Sample-NiSimpleCreate ./x64-Debug/NiSimpleCreate.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -o ../Bin/x64-Debug/Sample-NiSimpleRead ./x64-Debug/NiSimpleRead.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -MD -MP -MT "./x64-Debug/Menu.d x64-Debug/Menu.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Menu.o Menu.cpp
+g++ -MD -MP -MT "./x64-Debug/MouseInput.d x64-Debug/MouseInput.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/MouseInput.o MouseInput.cpp
+g++ -MD -MP -MT "./x64-Debug/NiHandTracker.d x64-Debug/NiHandTracker.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/NiHandTracker.o NiHandTracker.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiRecordSynthetic'
+g++ -MD -MP -MT "./x64-Debug/NiHandViewer.d x64-Debug/NiHandViewer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/NiHandViewer.o NiHandViewer.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSkeletonBenchmark'
+make -C ../NiBackRecorder
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiBackRecorder'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/main.d x64-Debug/main.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/main.o main.cpp
+g++ -o ../Bin/x64-Debug/Sample-NiSimpleViewer ./x64-Debug/NiSimpleViewer.o -L../../Lib -L../Bin/x64-Debug -lglut -lGL -lOpenNI
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.net'
+make -C ../NiUserSelection
+g++ -MD -MP -MT "./x64-Debug/NiViewer.d x64-Debug/NiViewer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/NiViewer.o NiViewer.cpp
+g++ -o ../Bin/x64-Debug/Sample-NiConvertXToONI ./x64-Debug/NiConvertXToONI.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserSelection'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/ClosestUserSelector.d x64-Debug/ClosestUserSelector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/ClosestUserSelector.o ClosestUserSelector.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleCreate'
+make -C ../NiUserTracker
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleRead'
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleViewer'
+make -C ../NiAudioSample
+g++ -MD -MP -MT "./x64-Debug/NiSimpleViewer.d x64-Debug/NiSimpleViewer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/NiSimpleViewer.o NiSimpleViewer.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiConvertXToONI'
+make -C ../NiSimpleSkeleton
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiAudioSample'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/NiAudioSample.d x64-Debug/NiAudioSample.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiAudioSample.o NiAudioSample.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserTracker'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/main.d x64-Debug/main.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/main.o main.cpp
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleSkeleton'
+mkdir -p x64-Debug
+g++ -MD -MP -MT "./x64-Debug/opengles.d x64-Debug/opengles.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/opengles.o opengles.cpp
+g++ -MD -MP -MT "./x64-Debug/NiSimpleSkeleton.d x64-Debug/NiSimpleSkeleton.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiSimpleSkeleton.o NiSimpleSkeleton.cpp
+g++ -MD -MP -MT "./x64-Debug/DefaultTrackingInitializer.d x64-Debug/DefaultTrackingInitializer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/DefaultTrackingInitializer.o DefaultTrackingInitializer.cpp
+g++ -MD -MP -MT "./x64-Debug/SceneDrawer.d x64-Debug/SceneDrawer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/SceneDrawer.o SceneDrawer.cpp
+make -C ../NiSampleModule
+g++ -o ../Bin/x64-Debug/Sample-NiBackRecorder ./x64-Debug/main.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSampleModule'
+mkdir -p x64-Debug
+g++ -o ../Bin/x64-Debug/Sample-NiAudioSample ./x64-Debug/NiAudioSample.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -MD -MP -MT "./x64-Debug/ExportedSampleDepth.d x64-Debug/ExportedSampleDepth.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Debug/ExportedSampleDepth.o ExportedSampleDepth.cpp
+g++ -MD -MP -MT "./x64-Debug/ExitPoseDetector.d x64-Debug/ExitPoseDetector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/ExitPoseDetector.o ExitPoseDetector.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiAudioSample'
+g++ -MD -MP -MT "./x64-Debug/main.d x64-Debug/main.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/main.o main.cpp
+g++ -MD -MP -MT "./x64-Debug/opengles.d x64-Debug/opengles.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/opengles.o opengles.cpp
+g++ -MD -MP -MT "./x64-Debug/PoseToggleUserSelector.d x64-Debug/PoseToggleUserSelector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/PoseToggleUserSelector.o PoseToggleUserSelector.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiBackRecorder'
+make -C ../NiCRead
+make[1]: Entering directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiCRead'
+mkdir -p x64-Debug
+( echo "Main-Class: org.openni.Samples.SimpleRead.SimpleRead"; echo "Class-Path:  ../Bin/x64-Debug/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+g++ -MD -MP -MT "./x64-Debug/NiCRead.d x64-Debug/NiCRead.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/NiCRead.o NiCRead.c
+jar -cfm ../Bin/x64-Debug/org.openni.Samples.SimpleRead.jar Manifest.txt -C x64-Debug .
+g++ -o ../Bin/x64-Debug/Sample-NiHandTracker ./x64-Debug/main.o ./x64-Debug/NiHandTracker.o ./x64-Debug/NiHandViewer.o ./x64-Debug/NiSimpleViewer.o -L../../Lib -L../Bin/x64-Debug -lglut -lGL -lOpenNI
+g++ -MD -MP -MT "./x64-Debug/PoseUserSelector.d x64-Debug/PoseUserSelector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/PoseUserSelector.o PoseUserSelector.cpp
+Compilation succeeded - 1 warning(s)
+g++ -o ../Bin/x64-Debug/Sample-NiSimpleSkeleton ./x64-Debug/NiSimpleSkeleton.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.net'
+g++ -MD -MP -MT "./x64-Debug/SampleManager.d x64-Debug/SampleManager.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/SampleManager.o SampleManager.cpp
+Compilation succeeded - 1 warning(s)
+( echo "Main-Class: org.openni.Samples.UserTracker.UserTrackerApplication"; echo "Class-Path:  ../Bin/x64-Debug/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.net'
+g++ -MD -MP -MT "./x64-Debug/SceneDrawer.d x64-Debug/SceneDrawer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/SceneDrawer.o SceneDrawer.cpp
+jar -cfm ../Bin/x64-Debug/org.openni.Samples.UserTracker.jar Manifest.txt -C x64-Debug .
+g++ -MD -MP -MT "./x64-Debug/SinglePoseUserSelector.d x64-Debug/SinglePoseUserSelector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/SinglePoseUserSelector.o SinglePoseUserSelector.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiHandTracker'
+g++ -MD -MP -MT "./x64-Debug/TrackingInitializer.d x64-Debug/TrackingInitializer.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/TrackingInitializer.o TrackingInitializer.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleSkeleton'
+g++ -MD -MP -MT "./x64-Debug/Statistics.d x64-Debug/Statistics.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni -I./  -o x64-Debug/Statistics.o Statistics.cpp
+( echo "Main-Class: org.openni.Samples.SimpleViewer.SimpleViewerApplication"; echo "Class-Path:  ../Bin/x64-Debug/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+echo java -jar org.openni.Samples.SimpleRead.jar > ../Bin/x64-Debug/org.openni.Samples.SimpleRead; chmod +x ../Bin/x64-Debug/org.openni.Samples.SimpleRead
+g++ -MD -MP -MT "./x64-Debug/UserSelector.d x64-Debug/UserSelector.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/UserSelector.o UserSelector.cpp
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.java'
+g++ -MD -MP -MT "./x64-Debug/Registration.d x64-Debug/Registration.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Debug/Registration.o Registration.cpp
+g++ -MD -MP -MT "./x64-Debug/SampleDepth.d x64-Debug/SampleDepth.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Debug/SampleDepth.o SampleDepth.cpp
+jar -cfm ../Bin/x64-Debug/org.openni.Samples.SimpleViewer.jar Manifest.txt -C x64-Debug .
+g++ -MD -MP -MT "./x64-Debug/UserTracker.d x64-Debug/UserTracker.o" -c -msse3 -O0 -g -I../../Include -I/usr/include/ni  -o x64-Debug/UserTracker.o UserTracker.cpp
+g++ -o ../Bin/x64-Debug/Sample-NiCRead ./x64-Debug/NiCRead.o -L../../Lib -L../Bin/x64-Debug -lOpenNI
+g++ -o ../Bin/x64-Debug/Sample-NiUserTracker ./x64-Debug/main.o ./x64-Debug/opengles.o ./x64-Debug/SceneDrawer.o -L../../Lib -L../Bin/x64-Debug -lglut -lGL -lOpenNI
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiCRead'
+echo java -jar org.openni.Samples.UserTracker.jar > ../Bin/x64-Debug/org.openni.Samples.UserTracker; chmod +x ../Bin/x64-Debug/org.openni.Samples.UserTracker
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserTracker'
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.java'
+echo java -jar org.openni.Samples.SimpleViewer.jar > ../Bin/x64-Debug/org.openni.Samples.SimpleViewer; chmod +x ../Bin/x64-Debug/org.openni.Samples.SimpleViewer
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.java'
+g++ -o ../Bin/x64-Debug/NiViewer ./x64-Debug/Audio.o ./x64-Debug/Capture.o ./x64-Debug/Device.o ./x64-Debug/Draw.o ./x64-Debug/Keyboard.o ./x64-Debug/Menu.o ./x64-Debug/MouseInput.o ./x64-Debug/NiViewer.o ./x64-Debug/Statistics.o -L../../Lib -L../Bin/x64-Debug -lglut -lGL -lOpenNI
+g++ -o ../Bin/x64-Debug/Sample-NiUserSelection ./x64-Debug/ClosestUserSelector.o ./x64-Debug/DefaultTrackingInitializer.o ./x64-Debug/ExitPoseDetector.o ./x64-Debug/main.o ./x64-Debug/opengles.o ./x64-Debug/PoseToggleUserSelector.o ./x64-Debug/PoseUserSelector.o ./x64-Debug/SampleManager.o ./x64-Debug/SceneDrawer.o ./x64-Debug/SinglePoseUserSelector.o ./x64-Debug/TrackingInitializer.o ./x64-Debug/UserSelector.o ./x64-Debug/UserTracker.o -L../../Lib -L../Bin/x64-Debug -lglut -lGL -lOpenNI
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiViewer'
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserSelection'
+g++ -o ../Bin/x64-Debug/libSample-NiSampleModule.so ./x64-Debug/ExportedSampleDepth.o ./x64-Debug/Registration.o ./x64-Debug/SampleDepth.o -L../../Lib -L../Bin/x64-Debug -lOpenNI -Wl,--no-undefined -shared
+make[1]: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSampleModule'
+make: Leaving directory `/home/wessi/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/Build'
